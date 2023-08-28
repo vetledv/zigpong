@@ -10,9 +10,7 @@ pub fn main() anyerror!void {
     raylib.initWindow(screen_width, screen_height, title);
     defer raylib.closeWindow();
 
-    const should_close = raylib.windowShouldClose();
-
-    while (!should_close) {
+    while (!raylib.windowShouldClose()) {
         raylib.beginDrawing();
         defer raylib.endDrawing();
 
