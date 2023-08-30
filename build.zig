@@ -17,6 +17,7 @@ pub fn build(b: *std.Build) void {
     });
 
     rl.link(b, exe, target, optimize);
+
     exe.addModule("raylib", raylib);
     exe.addModule("raylib-math", raylib_math);
 
