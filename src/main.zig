@@ -16,7 +16,7 @@ pub fn main() anyerror!void {
 
         raylib.clearBackground(raylib.Color.black);
 
-        raylib.drawRectangle(0, 0, 100, 100, raylib.Color.blue);
+        raylib.drawRectangle(100, 100, 50, 500, raylib.Color.blue);
 
         raylib.drawFPS(8, 8);
     }
